@@ -12,7 +12,10 @@ namespace Brainfuck.NET.Tests
     {
         public static int Main(string[] args)
         {
-            const string assembly = @"..\..\..\Brainfuck.NET\bin\Release\bfnet.exe";
+            string assembly = @"..\..\..\Brainfuck.NET\bin\Release\bfnet.exe";
+
+            if (Environment.OSVersion.Platform == PlatformID.Unix)
+                assembly = assembly.Replace("\\", "/");
 
             if (!File.Exists(assembly))
                 return 255;
