@@ -4,4 +4,5 @@ install:
   - nuget restore ./Brainfuck.NET.sln
 script:
   - xbuild /p:Configuration=Release /p:PostBuildEventUseInBuild=false /p:PreBuildEvent="" /p:PostBuildEvent="" /p:TargetFrameworkProfile="" ./Brainfuck.NET.sln
-  - ./Brainfuck.NET.Tests/bin/Release/Brainfuck.NET.Tests.exe
+  - cd "./Brainfuck.NET.Tests/bin/Release"
+  - mono Brainfuck.NET.Tests.exe

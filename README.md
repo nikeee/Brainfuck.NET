@@ -1,4 +1,4 @@
-# Brainfuck.NET [![Travis Build Status](https://travis-ci.org/nikeee/Brainfuck.NET.svg)](https://travis-ci.org/nikeee/Brainfuck.NET) [![Windows Build status](https://ci.appveyor.com/api/projects/status/1veilf8a8768x0k7?svg=true)](https://ci.appveyor.com/project/nikeee/brainfuck-net)
+# Brainfuck.NET [![Travis Build Status](https://travis-ci.org/nikeee/Brainfuck.NET.svg)](https://travis-ci.org/nikeee/Brainfuck.NET) [![Windows Build Status](https://ci.appveyor.com/api/projects/status/1veilf8a8768x0k7?svg=true)](https://ci.appveyor.com/project/nikeee/brainfuck-net)
 
 Compiles Brainfuck code to a .NET CIL executable.
 
