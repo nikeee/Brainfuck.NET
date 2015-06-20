@@ -20,8 +20,11 @@ namespace Brainfuck.NET.Tests
             if (!File.Exists(assembly))
                 return 255;
 
+            var arguments = "\"..\\..\\helloworld.bf\" hw.exe";
+            if (Environment.OSVersion.Platform == PlatformID.Unix)
+                arguments = arguments.Replace("\\", "/");
 
-            var p = Process.Start(assembly, "\"..\\..\\helloworld.bf\" hw.exe");
+            var p = Process.Start(assembly, arguments);
             p.WaitForExit();
             if (p.ExitCode != 0)
             {
